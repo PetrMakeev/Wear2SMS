@@ -1,14 +1,14 @@
 from coordinates import get_gps_coordinates
-#from weather_api_service import get_wheather
-#from weather_formatter import format_weather
+from weather_api_service import get_weather
+from weather_formatter import format_weather
 
 
 # основное тело программы   
 def main():
     coordinates = get_gps_coordinates()    
-    # wheather = get_wheather()
+    weather = get_weather(coordinates)
 
-    print(coordinates.latitude)
+    print(weather)
 
 
 # точка входа.
